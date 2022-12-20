@@ -1,10 +1,11 @@
 ---
 # handlers file for roles/ubuntu
 
+- name: Handler2
+  ansible.builtin.shell:
+    cmd: echo handler2
+    
 - name: Handler1
   ansible.builtin.shell:
     cmd: echo handler1
 
-- name: Handler2
-  ansible.builtin.shell:
-    cmd: echo handler2
