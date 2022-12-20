@@ -10,6 +10,4 @@
 - name: Echo 2
   ansible.builtin.shell:
     cmd: echo task2
-  notify:
-    - Handler2
 
