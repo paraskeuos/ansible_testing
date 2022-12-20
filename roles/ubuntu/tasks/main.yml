@@ -1,0 +1,15 @@
+---
+# tasks file for roles/ubuntu
+
+- name: Echo 1
+  ansible.builtin.shell:
+    cmd: echo task1
+  notify:
+    - Handler1
+
+- name: Echo 2
+  ansible.builtin.shell:
+    cmd: echo task2
+  notify:
+    - Handler2
+
