@@ -5,7 +5,7 @@
   ansible.builtin.shell:
     cmd: echo task1
   notify:
-    - Handler1
+    - Handler2
 
 - name: Echo 2
   ansible.builtin.shell:
